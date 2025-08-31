@@ -5,10 +5,170 @@
       <UniqueIdentifier>{8E41214B-6785-4CFE-B992-037D68949A14}</UniqueIdentifier>
       <Extensions>inf;inv;inx;mof;mc;</Extensions>
     </Filter>
+    <Filter Include="AGENT">
+      <UniqueIdentifier>{e9ef9e0a-9414-4db3-9e5a-1aab89502174}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AGENT\util">
+      <UniqueIdentifier>{59683d2f-36f7-4337-8b37-684dfa356587}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AGENT\util\API">
+      <UniqueIdentifier>{ffa115ca-1914-4bab-bce0-6d053c64c984}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AGENT\APC">
+      <UniqueIdentifier>{474897fd-78d4-49b6-8eff-6d844730635d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AGENT\util\IOCTL">
+      <UniqueIdentifier>{fdc8f16c-9236-457c-99d6-550698ace2de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AGENT\util\Linked_List">
+      <UniqueIdentifier>{95455843-e208-47a2-8fbd-6b2ef5148094}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AGENT\WORK_ITEM">
+      <UniqueIdentifier>{d8216730-7b30-442d-8b23-066cd6480ade}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AGENT\ObregisterCallbacks">
+      <UniqueIdentifier>{82386118-9041-47c5-84ee-6fe07dc261cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AGENT\util\Timestamp">
+      <UniqueIdentifier>{7962ab12-f62f-4497-8595-e7af77fadd1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AGENT\util\Convert">
+      <UniqueIdentifier>{6e3a7218-7bce-4d14-b153-cafed2e40ac8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AGENT\util\Convert\String">
+      <UniqueIdentifier>{73d1ae8f-f6c9-49b5-a213-2f37a6b36f47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AGENT\util\IOCTL\IOCTL_Routine">
+      <UniqueIdentifier>{625d1489-b6ec-4a44-97e7-47c4f857dcde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AGENT\util\HASH">
+      <UniqueIdentifier>{dfc298a3-fa68-4a7b-b794-9691e3d4b54e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AGENT\util\User">
+      <UniqueIdentifier>{5ea8b5c7-3ab9-493f-afea-45e01ef34101}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AGENT\util\Process">
+      <UniqueIdentifier>{fa1717a9-f57b-44e3-a3f1-41904b5a087d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AGENT\util\File">
+      <UniqueIdentifier>{d1a27345-5dab-459e-8a41-657d5fb45219}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AGENT\Log">
+      <UniqueIdentifier>{f5a1b242-e031-4ea8-825f-dcbe260d757f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AGENT\Log\NotifyRoutines">
+      <UniqueIdentifier>{40715b74-af9b-4502-a22d-2283909d8fb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AGENT\Log\NotifyRoutines\ProcessCreate">
+      <UniqueIdentifier>{da6c66a6-1960-4e6d-addb-334cf4ff9b1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AGENT\Log\NotifyRoutines\ImageLoad">
+      <UniqueIdentifier>{2f2d0b32-4452-4c04-a3d7-cf9e148ff35b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AGENT\Log\Registry">
+      <UniqueIdentifier>{7f100401-6159-4a19-9139-bef241fec41a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AGENT\Log\Network">
+      <UniqueIdentifier>{387c62d2-6917-47dc-8d9a-6179d438a908}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AGENT\Log\FileSystem">
+      <UniqueIdentifier>{a60c77f6-3f43-4ad0-9985-588f73a6d35d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Inf Include="Kernel.inf">
       <Filter>Driver Files</Filter>
     </Inf>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>AGENT</Filter>
+    </ClCompile>
+    <ClCompile Include="APC.cpp">
+      <Filter>AGENT\APC</Filter>
+    </ClCompile>
+    <ClCompile Include="NotifyRoutine_Process.cpp">
+      <Filter>AGENT\Log\NotifyRoutines\ProcessCreate</Filter>
+    </ClCompile>
+    <ClCompile Include="Timestamp.cpp">
+      <Filter>AGENT\util\Timestamp</Filter>
+    </ClCompile>
+    <ClCompile Include="String_.cpp">
+      <Filter>AGENT\util\Convert\String</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkedList.cpp">
+      <Filter>AGENT\util\Linked_List</Filter>
+    </ClCompile>
+    <ClCompile Include="WORK_ITEM.cpp">
+      <Filter>AGENT\WORK_ITEM</Filter>
+    </ClCompile>
+    <ClCompile Include="IOCTL.cpp">
+      <Filter>AGENT\util\IOCTL</Filter>
+    </ClCompile>
+    <ClCompile Include="IOCTL_Routines.cpp">
+      <Filter>AGENT\util\IOCTL\IOCTL_Routine</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessUtil.cpp">
+      <Filter>AGENT\util\Process</Filter>
+    </ClCompile>
+    <ClCompile Include="User.cpp">
+      <Filter>AGENT\util\User</Filter>
+    </ClCompile>
+    <ClCompile Include="FileJob.cpp">
+      <Filter>AGENT\util\File</Filter>
+    </ClCompile>
+    <ClCompile Include="HASH.cpp">
+      <Filter>AGENT\util\HASH</Filter>
+    </ClCompile>
+    <ClCompile Include="ObRegisterCallback.cpp">
+      <Filter>AGENT\ObregisterCallbacks</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="API.hpp">
+      <Filter>AGENT\util\API</Filter>
+    </ClInclude>
+    <ClInclude Include="util.hpp">
+      <Filter>AGENT\util</Filter>
+    </ClInclude>
+    <ClInclude Include="APC.hpp">
+      <Filter>AGENT\APC</Filter>
+    </ClInclude>
+    <ClInclude Include="WORK_ITEM.hpp">
+      <Filter>AGENT\WORK_ITEM</Filter>
+    </ClInclude>
+    <ClInclude Include="NotifyRoutine_Process.hpp">
+      <Filter>AGENT\Log\NotifyRoutines\ProcessCreate</Filter>
+    </ClInclude>
+    <ClInclude Include="Timestamp.hpp">
+      <Filter>AGENT\util\Timestamp</Filter>
+    </ClInclude>
+    <ClInclude Include="String_.hpp">
+      <Filter>AGENT\util\Convert\String</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedList.hpp">
+      <Filter>AGENT\util\Linked_List</Filter>
+    </ClInclude>
+    <ClInclude Include="IOCTL.hpp">
+      <Filter>AGENT\util\IOCTL</Filter>
+    </ClInclude>
+    <ClInclude Include="IOCTL_Routines.hpp">
+      <Filter>AGENT\util\IOCTL\IOCTL_Routine</Filter>
+    </ClInclude>
+    <ClInclude Include="User.hpp">
+      <Filter>AGENT\util\User</Filter>
+    </ClInclude>
+    <ClInclude Include="FileJob.hpp">
+      <Filter>AGENT\util\File</Filter>
+    </ClInclude>
+    <ClInclude Include="HASH.hpp">
+      <Filter>AGENT\util\HASH</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessUtil.hpp">
+      <Filter>AGENT\util\Process</Filter>
+    </ClInclude>
+    <ClInclude Include="ObRegisterCallback.hpp">
+      <Filter>AGENT\ObregisterCallbacks</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
